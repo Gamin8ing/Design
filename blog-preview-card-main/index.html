@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(47, 88%, 63%);
+      margin: 0;
+      padding: 0;
+      font-family: "Figtree", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: hsl(0, 0%, 7%);
+    }
+    .shadow {
+      margin: auto;
+      margin-top: 100px;
+      width: 320px;
+      background-color: black;
+      border-radius: 20px;
+    }
+    .main {
+      position: relative;
+      transition: ease-in-out 0.2s;
+      background-color: white;
+      color: hsl(0, 0%, 7%);
+      width: 280px;
+      text-align: left;
+      right: 8px;
+      bottom: 6px;
+      padding: 20px;
+      border-radius: 20px;
+      border: black solid 1px;
+      line-height: 1.5;
+    }
+    .main:hover {
+      right: 15px;
+      bottom: 13px;
+    }
+    .title:hover {
+      color: hsl(47, 88%, 63%);
+    }
+    .category {
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 800;
+      margin-top: 15px;
+      padding: 6px 12px;
+      width: fit-content;
+    }
+    
+    .date {
+      font-size: 13px;
+      margin: 13px 0;
+    }
+    
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 13px;
+      transition: ease-in-out 0.2s;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: hsl(0, 0%, 50%);
+      margin-bottom: 20px;
+    }
+    .main-img {
+      border-radius: 10px;
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+    
+    .profile {
+      height: 30px;
+      position: relative;
+      padding: 0;
+    }
+
+    .profile img {
+      height: 100%;
+      margin-right: 10px;
+    }
+    .author {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 800;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="shadow">
+    <div class="main">
+      <img class="main-img" src="assets/images/illustration-article.svg" alt="design">
+      <div class="category">
+        Learning
+      </div>
+      <div class="date">
+        Published 21 Dec 2023
+      </div>
+      <div class="title">
+        <a class="title" href="#">HTML & CSS foundations</a>
+      </div>
+      <div class="desc">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </div>
+      <div class="profile">
+        <img src="assets/images/image-avatar.webp" alt="">
+        <span class="author">Greg Hooper</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
